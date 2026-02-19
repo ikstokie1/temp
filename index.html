@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYNOX Studios - Game Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">XYNOX</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#games" class="nav-link">GAMES</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#news" class="nav-link">NEWS</a></li>
+                <li><a href="#team" class="nav-link">TEAM</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">XYNOX STUDIOS</h1>
+            <p class="hero-subtitle">WHERE LEGENDS ARE CREATED</p>
+            <button class="cta-button">EXPLORE NOW</button>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Games Showcase -->
+    <section id="games" class="games">
+        <div class="container">
+            <h2 class="section-title">OUR GAMES</h2>
+            <div class="games-grid">
+                <!-- Game 1 -->
+                <div class="game-card" onclick="openModal(0)">
+                    <div class="game-image game-image-1"></div>
+                    <div class="game-info">
+                        <h3>NEON WARS</h3>
+                        <p>Cyberpunk Action</p>
+                    </div>
+                </div>
+
+                <!-- Game 2 -->
+                <div class="game-card" onclick="openModal(1)">
+                    <div class="game-image game-image-2"></div>
+                    <div class="game-info">
+                        <h3>SHADOW PROTOCOL</h3>
+                        <p>Stealth Thriller</p>
+                    </div>
+                </div>
+
+                <!-- Game 3 -->
+                <div class="game-card" onclick="openModal(2)">
+                    <div class="game-image game-image-3"></div>
+                    <div class="game-info">
+                        <h3>CRIMSON CITY</h3>
+                        <p>Open-World Crime Saga</p>
+                    </div>
+                </div>
+
+                <!-- Game 4 -->
+                <div class="game-card" onclick="openModal(3)">
+                    <div class="game-image game-image-4"></div>
+                    <div class="game-info">
+                        <h3>ECHO NEXUS</h3>
+                        <p>Sci-Fi Multiplayer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Detail Modals -->
+    <div id="gameModal" class="modal" onclick="closeModal(event)">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <div class="modal-details">
+                    <div class="detail">
+                        <h4>PLATFORMS</h4>
+                        <p id="modalPlatforms"></p>
+                    </div>
+                    <div class="detail">
+                        <h4>RELEASE</h4>
+                        <p id="modalRelease"></p>
+                    </div>
+                    <div class="detail">
+                        <h4>GENRE</h4>
+                        <p id="modalGenre"></p>
+                    </div>
+                </div>
+                <button class="download-btn">DOWNLOAD NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">ABOUT US</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>XYNOX Studios is a cutting-edge game development company dedicated to creating immersive, innovative gaming experiences. Since our founding, we've been committed to pushing the boundaries of what's possible in interactive entertainment.</p>
+                    <p>Our team of talented developers, artists, and designers work relentlessly to deliver games that captivate millions worldwide. We believe in quality, creativity, and player engagement.</p>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>15M+</h3>
+                        <p>Players Worldwide</p>
+                    </div>
+                    <div class="stat">
+                        <h3>25+</h3>
+                        <p>Award Wins</p>
+                    </div>
+                    <div class="stat">
+                        <h3>40+</h3>
+                        <p>Team Members</p>
+                    </div>
+                    <div class="stat">
+                        <h3>8</h3>
+                        <p>Years Active</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="section-title">LATEST NEWS</h2>
+            <div class="news-grid">
+                <!-- News articles will be added here -->
+                <div class="empty-state">
+                    <p>Stay tuned for exciting announcements!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">OUR TEAM</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar member-1"></div>
+                    <h3>ALEX RIVERA</h3>
+                    <p>Creative Director</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar member-2"></div>
+                    <h3>SARAH CHEN</h3>
+                    <p>Lead Programmer</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar member-3"></div>
+                    <h3>MARCUS STONE</h3>
+                    <p>Art Director</p>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-avatar member-4"></div>
+                    <h3>EMMA WRIGHT</h3>
+                    <p>Producer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">GET IN TOUCH</h2>
+            <div class="contact-content">
+                <form class="contact-form" onsubmit="submitForm(event)">
+                    <input type="text" placeholder="YOUR NAME" required>
+                    <input type="email" placeholder="YOUR EMAIL" required>
+                    <textarea placeholder="YOUR MESSAGE" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                </form>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <h4>EMAIL</h4>
+                        <p>info@xynoxstudios.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>PHONE</h4>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                    <div class="info-item">
+                        <h4>FOLLOW US</h4>
+                        <div class="social-links">
+                            <a href="#">TWITTER</a>
+                            <a href="#">DISCORD</a>
+                            <a href="#">YOUTUBE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 XYNOX Studios. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">PRIVACY POLICY</a>
+                <a href="#">TERMS OF SERVICE</a>
+                <a href="#">CONTACT</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
